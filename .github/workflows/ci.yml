@@ -13,13 +13,6 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
-        
-      - name: Random Execute
-        run: |
-          R=$RANDOM
-          M=20000
-          echo $R
-          if [ $R -lt $M ];then exit 1;fi  
 
       - name: Auto green
         run: |
